@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
-  width: 70%;
+  margin: 3px auto;
+  width: 81%;
 
   .bg-blur-red {
     position: absolute;
@@ -37,12 +37,24 @@
       font-size: 18px;
       color: #0008;
     }
+
+    .features-list{
+      >div{
+        padding-bottom: 1rem;
+
+      }
+      > p {
+        padding-bottom: 2rem;
+      }
+    }
   }
 
   .features-list-item {
     display: flex;
     align-items: center;
     gap: 8px;
+
+  
   }
 
   .item-white p {
@@ -51,17 +63,16 @@
   }
 }
 .advantages-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    max-width: 70%;
-    position: relative;
-  
-    .bg-blur-red {
-      position: absolute;
-      top: 200px;
-      left: 200px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 70%;
+  position: relative;
+
+  .bg-blur-red {
+    position: absolute;
+    top: 200px;
+    left: 200px;
   }
-  
+}
