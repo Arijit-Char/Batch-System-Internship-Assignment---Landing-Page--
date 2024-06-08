@@ -20,7 +20,7 @@ Create a responsive landing page for a mobile application using React Vite, SCSS
 2. Navigate to the project directory.
 3. Run `npm install` to install dependencies.
 4. Run `npm run dev` to start the development server.
-5. Click on the local server link.
+5. Click on the local server URL.
 
 ## Design Choices and Libraries Used
 
