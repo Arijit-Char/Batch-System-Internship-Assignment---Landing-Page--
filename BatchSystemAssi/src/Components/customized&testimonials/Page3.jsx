@@ -3,10 +3,10 @@ import "./Page3.scss";
 import group35932 from "../../assets/Group 35932.png";
 import group3597 from "../../assets/Group 35937.png";
 import group35917 from "../../assets/Group 35917.png";
-import notif from "../../assets/notif.png";
 import testsec from "../../assets/Group 1000002332.png";
 import star1 from "../../assets/star-1.png";
 import star3 from "../../assets/Star 3.png";
+import starfill from "../../assets/star-filled.png";
 
 export default function Page3() {
   return (
@@ -47,7 +47,7 @@ export default function Page3() {
         </div>
         <div className="customized-section">
           <div className="heading">
-            <img src={notif} alt="icon" />
+            <img src={starfill} alt="icon" />
             <p
               style={{
                 fontWeight: 900,
@@ -58,7 +58,7 @@ export default function Page3() {
               Fully Customizable
             </p>
           </div>
-          <p style={{ paddingRight: "100px" }}>
+          <p style={{ paddingRight: "100px",width:"80%",lineHeight:"1.95rem",fontSize:"18px",color:"#0008",fontWeight:"700" }}>
             Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
             In ultrices malesuada elit mauris etiam odio. Duis tristique lacus,
             et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse
@@ -76,7 +76,7 @@ export default function Page3() {
           </div>
         </center>
         <div className="testimonials-content">
-          <div style={{ float: "left", backgroundImage: `url(${group35917})`, backgroundRepeat: "no-repeat", backgroundSize: "650px", backgroundPosition: "-50% 60%" }}>
+          <div style={{ float: "left", backgroundRepeat: "no-repeat", backgroundSize: "650px", backgroundPosition: "-50% 60%" }}>
             <img src={testsec} alt="testimonials" />
           </div>
           <div className="testimonials-heading review">

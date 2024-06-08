@@ -1,20 +1,31 @@
-.customized{
-    display: flex;
-    align-items: center;
+.customized {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3rem;
+margin-top: -4rem;
+  width: 100%;
 }
 
-.customized .heading>p{
-    margin-left: 10px;
-    font-weight: 400;
+.customized .heading > p {
+  margin-left: 10px;
+  font-weight: 400;
 }
 
-
-.testimonials h1{
-    font-weight:1000;
-    font-size:3rem;
+.testimonials h1 {
+  font-weight: 1000;
+  font-size: 3rem;
 }
 
-.testimonials-content{
-    display:flex;
-    align-items: center;
+.testimonials-content {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  width: 84%;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }

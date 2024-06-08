@@ -1,7 +1,7 @@
 .faq {
   display: flex;
   flex-direction: column;
-  margin-left: 160px;
+  margin-left: 15rem;
 }
 
 .faq h1 {
@@ -13,8 +13,9 @@
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  width: 940px;
+  gap: 20px;
+  width: 1070px;
+  height: 562px;
   margin-top: 20px;
 }
 
@@ -24,14 +25,14 @@
   font-weight: 400;
 }
 
-/* app */
 .app {
   margin-top: 100px;
   margin-bottom: 40px;
   background-image: url("../../assets//Frame\ \(2\).png");
-  height: 508px;
-  width: 940px;
-  margin-left: 160px;
+background-size: cover;
+  height: 500px;
+  width: 1100px;
+  margin-left: 14rem;
   color: white;
   border-radius: 8px;
 }
@@ -67,7 +68,10 @@
   margin-left: 40px;
 }
 
-/* footer */
+.footer{
+  margin-top: 10rem;
+}
+
 footer > ul > li {
   display: flex;
   align-items: center;

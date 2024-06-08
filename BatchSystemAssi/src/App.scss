@@ -1,11 +1,109 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  ::-webkit-scrollbar {
+    height: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
 }
-body{
-    background-color: #fcf7f7;
+body {
+  background-color: #fcf7f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 725px) {
+  .hero,
+  .feature,
+  .advantages,
+  .customized,
+  .testimonials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features-section {
+    margin-left: 90px;
+  }
+
+  .star {
+    display: none;
+  }
+
+  .advantages {
+    margin-top: 60px;
+  }
+
+  .customized-section {
+    margin-left: 90px;
+    margin-bottom: 60px;
+  }
+
+  .testimonials-heading {
+    margin-left: 90px;
+  }
+
+  .testimonials-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .review {
+    margin-bottom: 120px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    width: fit-content;
+  }
+
+  .faq {
+    margin-left: 90px;
+  }
+
+  .app {
+    width: 650px;
+    margin-left: 90px;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  footer {
+    margin-left: 90px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    font-family: "Raleway", sans-serif;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 10px;
+    width: 650px;
+  }
+
+  footer p {
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1039px) {
+  nav button {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1139px) {
+  body {
+    overflow-x: auto;
+  }
 }

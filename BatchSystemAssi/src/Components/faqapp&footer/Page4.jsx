@@ -6,6 +6,7 @@ import Vector from "../../assets/Vector.png";
 import mail from "../../assets/email.png"; 
 import phone from "../../assets/phone.png"; 
 import group from "../../assets/Group.png"; 
+import apple from "../../assets/apple.png";
 export default function Page4() {
   return (
     <div>
@@ -114,7 +115,7 @@ export default function Page4() {
         </div>
       </div>
 
-      {/* app */}
+   
       <div
         className="app-parent"
         style={{
@@ -153,14 +154,13 @@ export default function Page4() {
             </p>
             <button>
               Download App
-              <img src={Vector} alt="Vector" />
+              <img src={apple} alt="Vector" />
             </button>
           </div>
         </div>
       </div>
 
-      {/* footer */}
-      <footer>
+      <footer className="footer">
         <ul>
           <li>
             <img
