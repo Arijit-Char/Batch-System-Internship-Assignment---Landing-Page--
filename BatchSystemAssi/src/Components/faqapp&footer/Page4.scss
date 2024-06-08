@@ -29,7 +29,7 @@
   margin-top: 100px;
   margin-bottom: 40px;
   background-image: url("../../assets//Frame\ \(2\).png");
-background-size: cover;
+  background-size: cover;
   height: 500px;
   width: 1100px;
   margin-left: 14rem;
@@ -68,7 +68,7 @@ background-size: cover;
   margin-left: 40px;
 }
 
-.footer{
+.footer {
   margin-top: 10rem;
 }
 
@@ -97,6 +97,7 @@ footer {
   gap: 50px;
   margin-bottom: 10px;
   margin-top: 50px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 footer li {
@@ -126,12 +127,12 @@ footer button {
 
 .fade-hr {
   border: 0;
-  height: 1px; /* Adjust the height as needed */
+  height: 1px; 
   background: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
     #000,
     rgba(0, 0, 0, 0)
   );
-  margin: 10px 150px; /* Adjust the margin as needed */
+  margin: 10px 150px;
 }

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 3rem;
-margin-top: -4rem;
+  margin-top: -4rem;
   width: 100%;
 }
 
@@ -28,4 +28,31 @@ margin-top: -4rem;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
+}
+.customized {
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    margin-top: -2rem;
+  }
+}
+
+.customized-section p {
+  @media screen and (max-width: 768px) {
+    padding-right: 0;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+.testimonials h1 {
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.testimonials-content {
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+  }
 }

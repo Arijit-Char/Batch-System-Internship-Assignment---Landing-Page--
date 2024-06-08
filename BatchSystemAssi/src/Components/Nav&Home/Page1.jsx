@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Page1.scss";
 import logo from "../../assets/logo.png";
 import Vector from "../../assets/Vector.png";
@@ -13,7 +14,11 @@ import playicon from "../../assets/play_icon.png";
 
 export default function Page1() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <nav className="nav">
         <div className="logo">
           <img src={logo} alt="Logo" />
@@ -30,7 +35,6 @@ export default function Page1() {
       </nav>
       <img className="starrelative" src={star3} alt="" />
       <div className="hero">
-       
         <div className="hero-text">
           <h2>
             Make The <span className="bg-blur-red"></span>
@@ -97,6 +101,6 @@ export default function Page1() {
           <span className="bg-blur-red"></span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

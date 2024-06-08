@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Page2.scss";
 import features1 from "../../assets/features-1.png";
 import star5 from "../../assets/star-05.png";
@@ -10,23 +11,29 @@ import star1 from "../../assets/star-1.png";
 
 export default function Page2() {
   return (
-    <div>
-      <div class="features-section">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <div className="features-section">
         <img className="starrelative" src={star3} alt="" />
 
-        <div class="img-container">
+        <div className="img-container">
           <img src={features1} alt="" />
-          <span class="bg-blur-yellow"></span>
-          <span class="bg-blur-red"></span>
+          <span className="bg-blur-yellow"></span>
+          <span className="bg-blur-red"></span>
         </div>
-        <div class="info-section">
-          <div class="headings">
-            <div class="h4" style={{letterSpacing:"5px"}}>FEATURES</div>
-            <div class="h2">Uifry Premium</div>
+        <div className="info-section">
+          <div className="headings">
+            <div className="h4" style={{ letterSpacing: "5px" }}>
+              FEATURES
+            </div>
+            <div className="h2">Uifry Premium</div>
           </div>
-          <div class="features-list">
-            <div class="features-list-item">
-              <img src={star5} />
+          <div className="features-list">
+            <div className="features-list-item">
+              <img src={star5} alt="Star Icon" />
               <li>Budgeting Intervals</li>
             </div>
 
@@ -34,17 +41,17 @@ export default function Page2() {
               Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
               faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
             </p>
-            <div class="features-list-item">
-              <img src={star5} />
-              <img src={cube2} alt="" />
+            <div className="features-list-item">
+              <img src={star5} alt="Star Icon" />
+              <img src={cube2} alt="Cube Icon" />
               <li>Budgeting Intervals</li>
             </div>
             <p>
               Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
               faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
             </p>
-            <div class="features-list-item">
-              <img src={cube4} />
+            <div className="features-list-item">
+              <img src={cube4} alt="Cube Icon" />
               <li>Budgeting Intervals</li>
             </div>
             <p>
@@ -53,22 +60,26 @@ export default function Page2() {
             </p>
           </div>
         </div>
-        <div class="img-container2">
-          <span class="bg-blur-yellow"></span>
-          <span class="bg-blur-red"></span>
+        <div className="img-container2">
+          <span className="bg-blur-yellow"></span>
+          <span className="bg-blur-red"></span>
         </div>
       </div>
 
-      <div class="advantages-section">
-        <div class="advantages info-section">
-          <div class="headings">
-          
-            <div class="h4" style={{letterSpacing:"5px"}}>ADVANTAGES</div>
-            <div class="h2">Why Choose Uifry?</div>
+      <div className="advantages-section">
+        <div className="advantages info-section">
+          <div className="headings">
+            <div className="h4" style={{ letterSpacing: "5px" }}>
+              ADVANTAGES
+            </div>
+            <div className="h2">Why Choose Uifry?</div>
           </div>
-          <div class="features-list">
-            <div class="features-list-item" style={{display:"flex",gap:"15px",alignItems:"center",paddingBottom:"1.5rem"}}>
-              <img src={notif} />
+          <div className="features-list">
+            <div
+              className="features-list-item"
+              style={{ display: "flex", gap: "15px", alignItems: "center", paddingBottom: "1.5rem" }}
+            >
+              <img src={notif} alt="Notification Icon" />
               <h2>Clever Notifications</h2>
             </div>
 
@@ -81,17 +92,15 @@ export default function Page2() {
             </p>
           </div>
         </div>
-        
-        <div class="img-container">
-          <span class="bg-blur-yellow"></span>
-          <span class="bg-blur-red"></span>
-          
+
+        <div className="img-container">
+          <span className="bg-blur-yellow"></span>
+          <span className="bg-blur-red"></span>
+
           <img src={features1} alt="" />
-          
         </div>
         <img className="star1" src={star1} alt="" />
-
       </div>
-    </div>
+    </motion.div>
   );
 }

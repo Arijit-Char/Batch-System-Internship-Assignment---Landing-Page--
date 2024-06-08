@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Page3.scss";
 import group35932 from "../../assets/Group 35932.png";
 import group3597 from "../../assets/Group 35937.png";
@@ -10,7 +11,11 @@ import starfill from "../../assets/star-filled.png";
 
 export default function Page3() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="customized">
         <div
           style={{
@@ -58,11 +63,12 @@ export default function Page3() {
               Fully Customizable
             </p>
           </div>
-          <p style={{ paddingRight: "100px",width:"80%",lineHeight:"1.95rem",fontSize:"18px",color:"#0008",fontWeight:"700" }}>
+          <p style={{ paddingRight: "100px", width: "80%", lineHeight: "1.95rem", fontSize: "18px", color: "#0008", fontWeight: "700" }}>
             Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
-            In ultrices malesuada elit mauris etiam odio. Duis tristique lacus,
-            et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse
-            sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien,
+            In ultrices malesuada elit mauris etiam odio. Duis
+            tristique lacus, et blandit viverra nisl velit. Sed mattis
+            rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget
+            ac dolor neque lorem sapien,
             suspendisse aliquam.
           </p>
         </div>
@@ -87,6 +93,6 @@ export default function Page3() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

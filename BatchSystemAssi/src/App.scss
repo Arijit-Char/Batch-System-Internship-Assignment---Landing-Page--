@@ -5,7 +5,7 @@
     height: 0;
   }
   ::-webkit-scrollbar-thumb {
-    background: transparent;
+    background: red;
   }
 }
 body {
@@ -107,3 +107,13 @@ body {
     overflow-x: auto;
   }
 }
+p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0006;
+  line-height: 1.95rem;
+}
+.img-container:hover {
+    scale: 1.015;
+    transition: 0.5s;
+  }
