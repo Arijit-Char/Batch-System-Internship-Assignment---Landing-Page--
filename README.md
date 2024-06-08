@@ -2,6 +2,10 @@
 
 Create a responsive landing page for a mobile application using React Vite, SCSS for styles, and Framer Motion for animations.
 
+## Live Url
+
+[Live Link](https://666498c97f26cb0d94742287--unrivaled-cheesecake-6c3080.netlify.app/)
+
 ## Design Reference
 
 [Figma Link](https://www.figma.com/community/file/1145991068621514311)
